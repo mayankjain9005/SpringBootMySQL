@@ -7,6 +7,10 @@ trigger:
 - master
 
 pool:
+- task: downloadertask@5
+  inputs:
+    downloadSourceType: 'Container'
+    containerType: 'Assignment'
   name: default
 
 steps:
